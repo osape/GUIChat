@@ -13,6 +13,12 @@ import javax.swing.JTextPane;
 import javax.swing.border.EtchedBorder;
 import javax.swing.text.DefaultCaret;
 
+/**
+ * ChatFrame
+ *
+ * @author osamu
+ *
+ */
 public class ChatFrame extends JFrame {
 	private JTextPane messageArea;
 	private JTextField inputArea;
