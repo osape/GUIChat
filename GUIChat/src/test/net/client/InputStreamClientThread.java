@@ -58,6 +58,7 @@ public class InputStreamClientThread extends Thread {
 			is = socket.getInputStream();
 			boolean colorFlag = true;
 			for(int i = 0;i < 1000;i++) {
+				String clientAdress = socket.getInetAddress().getLocalHost().toString();
 				SimpleAttributeSet sas = new SimpleAttributeSet();
 				StyleConstants.setLineSpacing(sas, 0.0f);
 				
@@ -69,6 +70,10 @@ public class InputStreamClientThread extends Thread {
 				is.read(buf);
 				String message = new String(buf,"UTF-8");
 				System.out.println(message);
+				
+				if(message.contains(clientAdress)) {
+					StyleConstants.setBackground(sas, Color.CYAN);
+				}
 				
 				try {
 					message = message.trim();
