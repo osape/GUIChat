@@ -14,8 +14,7 @@ import javax.swing.border.EtchedBorder;
 import javax.swing.text.DefaultCaret;
 
 /**
- * ChatFrame
- *
+ * チャットフレーム
  * @author osamu
  *
  */
