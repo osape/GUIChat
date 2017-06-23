@@ -7,6 +7,11 @@ import javax.swing.JTextField;
 
 import test.net.client.OutputStreamClient;
 
+/**
+ * 入力エリアでエンターキーを押すとメッセージを送信する
+ * @author osamu
+ *
+ */
 public class MessageSend implements ActionListener {
 	/**
 	 * メッセージ出力サーバーポート

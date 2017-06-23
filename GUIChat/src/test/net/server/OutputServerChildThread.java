@@ -46,7 +46,7 @@ public class OutputServerChildThread extends Thread {
 	@Override
 	public void run() {
 		OutputStream os = null;
-		String pattern = "yyyy/MM/dd hh:mm:ss";
+		String pattern = "yyyy/MM/dd k:hh:mm:ss";
 		SimpleDateFormat sdf = new SimpleDateFormat(pattern);
 
 		int messageNo = dt.getMessagesSize();
